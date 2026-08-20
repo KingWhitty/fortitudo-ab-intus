@@ -1,0 +1,12 @@
+{
+  "name": "Intus et Foris Renati",
+  "short_name": "Renati",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#151A1F",
+  "theme_color": "#151A1F",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/crest.jpg", "sizes": "192x192", "type": "image/jpeg", "purpose": "any" }
+  ]
+}
