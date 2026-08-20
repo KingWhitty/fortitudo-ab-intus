@@ -133,19 +133,19 @@ const COLS = {
   hold:   [{ k: "sec", ph: "sec", mode: "numeric" }, { k: "rpe", ph: "RPE", mode: "decimal" }],
 };
 
-/* form cues \u2014 written, not borrowed. Tap an exercise name to open. */
+/* form cues — written, not borrowed. Tap an exercise name to open. */
 const CUES = {
   "Back squat": "Bar on the rear delts, not the neck. Brace before you unrack. Sit between the hips, knees tracking over the middle toes. Drive the whole foot through the floor.",
   "Front squat": "Elbows high through the whole rep. The moment they drop, the bar rolls forward and the rep is over.",
   "Goblet squat": "Bell at the chest, elbows inside the knees at the bottom. Depth over load.",
   "Bulgarian split squat": "Rear foot elevated, front shin near vertical. Lean the torso slightly forward to bias the glute. Slow down, drive up.",
-  "Deadlift": "Bar over mid-foot, shoulders just in front of the bar. Take the slack out before you pull. Stop the set the moment your lower back rounds \u2014 that rep does not count.",
+  "Deadlift": "Bar over mid-foot, shoulders just in front of the bar. Take the slack out before you pull. Stop the set the moment your lower back rounds — that rep does not count.",
   "Trap bar deadlift": "Same brace, easier on the lower back. Push the floor away rather than pulling with the arms.",
-  "Romanian deadlift": "Push the hips back, soft knees, bar dragging the thighs. Stop when the hamstrings stop stretching \u2014 not when the bar hits the floor.",
+  "Romanian deadlift": "Push the hips back, soft knees, bar dragging the thighs. Stop when the hamstrings stop stretching — not when the bar hits the floor.",
   "Barbell hip thrust": "Bar over the hips, chin tucked, ribs down. Two-second squeeze at the top. Do not arch the lower back to get higher.",
   "Hip thrust": "Bar over the hips, chin tucked, ribs down. Two-second squeeze at lockout.",
-  "Bench press": "Shoulder blades pinned back and down. Bar to the lower chest, elbows around 45\u00b0, not flared to 90\u00b0.",
-  "Incline DB press": "30\u201345\u00b0 bench. Full stretch at the bottom, squeeze at the top without banging the bells together.",
+  "Bench press": "Shoulder blades pinned back and down. Bar to the lower chest, elbows around 45°, not flared to 90°.",
+  "Incline DB press": "30–45° bench. Full stretch at the bottom, squeeze at the top without banging the bells together.",
   "Overhead press": "Squeeze the glutes so the lower back does not take the load. Head moves through the window as the bar passes the forehead.",
   "Weighted pull-up": "Full hang at the bottom. Pull the elbows down and back, chest to the bar. No kipping.",
   "Pull-up": "Full hang, chest to bar, controlled descent. Band-assist rather than swing if you cannot get there clean.",
@@ -155,8 +155,8 @@ const CUES = {
   "Face pull": "Rope to the forehead, elbows high, external rotation at the end. Light. This is shoulder insurance.",
   "Lateral raise": "Light, strict, slight forward lean. Lead with the elbows, stop at shoulder height.",
   "Rear delt fly": "Elbows soft, squeeze the back of the shoulder. Undertrained and highly visible.",
-  "Weighted dip": "Slight forward lean, elbows tucked. Stop when the upper arm is parallel \u2014 deeper is a shoulder problem waiting.",
-  "Overhead triceps extension": "Elbows pointed forward and still. Deep stretch at the bottom \u2014 that is where the long head grows.",
+  "Weighted dip": "Slight forward lean, elbows tucked. Stop when the upper arm is parallel — deeper is a shoulder problem waiting.",
+  "Overhead triceps extension": "Elbows pointed forward and still. Deep stretch at the bottom — that is where the long head grows.",
   "Overhead cable extension": "Elbows locked in place, deep stretch behind the head. This is the back of the arm.",
   "Rope pushdown": "Elbows pinned to the ribs. Squeeze straight at the bottom, do not lean into it.",
   "Barbell curl": "No swinging. If the hips move, the weight is too heavy.",
@@ -165,26 +165,26 @@ const CUES = {
   "Leg curl": "Slow negative. Point the toes toward the shins to bring in more hamstring.",
   "Leg extension": "Squeeze at the top, control down. Do not slam into full lockout under heavy load.",
   "Standing calf raise": "Full stretch at the bottom, two-second pause at the top. Range beats load here.",
-  "Kettlebell swing": "A hinge, not a squat. The bell floats \u2014 you do not lift it with the arms. Snap the hips and glutes.",
+  "Kettlebell swing": "A hinge, not a squat. The bell floats — you do not lift it with the arms. Snap the hips and glutes.",
   "KB clean & press": "Tame the arc so the bell does not bang the forearm. Press from a solid rack position.",
-  "Box jump": "Land soft and quiet, knees out. Step down between reps \u2014 never rebound off a jump when tired.",
-  "Push-up": "Body in one line, elbows around 45\u00b0. Elevate the hands before you let the hips sag.",
+  "Box jump": "Land soft and quiet, knees out. Step down between reps — never rebound off a jump when tired.",
+  "Push-up": "Body in one line, elbows around 45°. Elevate the hands before you let the hips sag.",
   "Floor wiper": "Bar locked out overhead, legs sweep side to side under control. Do not let the lower back arch off the floor.",
   "Hanging leg raise": "Full hang, no swinging. Curl the pelvis at the top rather than just lifting the legs.",
   "Hanging knee raise": "Same as the leg raise, knees bent. Master this before straight legs.",
   "Dead hang": "Shoulders active, not slumped in the sockets. Log the seconds.",
   "Weighted plank": "Ribs down, glutes on, neutral neck. Quality beats duration.",
-  "Front plank": "Ribs down, glutes on. Watch the midline for any ridge pushing up \u2014 stop if it appears.",
+  "Front plank": "Ribs down, glutes on. Watch the midline for any ridge pushing up — stop if it appears.",
   "Dead bug": "Lower back stays flat against the floor. If it lifts, shorten the range. The single best deep-core exercise there is.",
   "Pallof press": "Resist the rotation, do not create it. This trains the corset muscle under load.",
-  "Cable crunch": "Kneeling, curl the ribs toward the hips. Do not just bow at the hips. Load it \u2014 abs are muscle.",
+  "Cable crunch": "Kneeling, curl the ribs toward the hips. Do not just bow at the hips. Load it — abs are muscle.",
   "Suitcase carry": "Heavy, one side only. Do not lean. Anti-lateral-flexion is where obliques get strong.",
   "Farmer carry": "Tall posture, shoulders down, quick steps. Grip and trunk.",
   "Cable kickback": "Full hip extension, squeeze at the end. Do not swing the leg or arch the back.",
-  "Seated hip abduction": "Lean forward slightly \u2014 it hits the glute medius harder than sitting upright.",
+  "Seated hip abduction": "Lean forward slightly — it hits the glute medius harder than sitting upright.",
   "Cable pull-through": "Pure hip hinge, no spinal load. Finish with a glute squeeze, not a lower-back arch.",
   "Back extension": "Round the upper back slightly and squeeze the glutes to lift. Do not hyperextend at the top.",
-  "Step-up onto box": "Knee-height box. Drive through the heel of the top foot. No push-off from the back foot \u2014 that is cheating.",
+  "Step-up onto box": "Knee-height box. Drive through the heel of the top foot. No push-off from the back foot — that is cheating.",
   "Walking lunge": "Long stride. Short strides turn it into a quad exercise.",
 };
 
@@ -461,7 +461,7 @@ export default function FortitudoLog() {
       setErr("");
       return true;
     } catch {
-      setErr("Save failed. Don't close the app \u2014 tap Save again, or pull a backup from the Export tab.");
+      setErr("Save failed. Don't close the app — tap Save again, or pull a backup from the Export tab.");
       return false;
     }
   }, []);
@@ -584,7 +584,7 @@ export default function FortitudoLog() {
         {!storageOk && (
           <div className="tl-banner">
             <b>This browser isn't storing anything.</b> That usually means Private Browsing. Open the site
-            in a normal tab or add it to your home screen \u2014 otherwise nothing you log here survives
+            in a normal tab or add it to your home screen — otherwise nothing you log here survives
             closing the app.
           </div>
         )}
@@ -607,7 +607,7 @@ export default function FortitudoLog() {
         <div className="in">
           <div className="tl-savestate">
             {dirty
-              ? <><b>Unsaved changes</b> \u2014 tap Save</>
+              ? <><b>Unsaved changes</b> — tap Save</>
               : savedAt
                 ? <>Saved {savedAt.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}</>
                 : <>Nothing logged yet</>}
@@ -774,24 +774,24 @@ function Exercise({ item, logged, onChange, est1rm, pick, onPick, onRemove }) {
             {name}<i>{open ? "close" : "how to"}</i>
           </button>
           <div className="tl-meta">
-            {item.sets > 1 ? `${item.sets} \u00d7 ${item.reps}` : item.reps}
-            {item.note ? ` \u00b7 ${item.note}` : ""}
+            {item.sets > 1 ? `${item.sets} × ${item.reps}` : item.reps}
+            {item.note ? ` · ${item.note}` : ""}
           </div>
         </div>
         <div className="tl-mono" style={{ fontSize: 12, color: doneCount ? "var(--verdigris)" : "var(--chalk-dim)" }}>
           {doneCount}/{rows.length}
         </div>
         {onRemove && (
-          <button className="tl-btn" data-ghost="1" onClick={onRemove} aria-label={`Remove ${name}`}>\u00d7</button>
+          <button className="tl-btn" data-ghost="1" onClick={onRemove} aria-label={`Remove ${name}`}>×</button>
         )}
       </div>
 
       {open && (
         <div className="tl-howto">
-          <div>{cue || "No written cue for this one yet \u2014 the video search below will cover it."}</div>
+          <div>{cue || "No written cue for this one yet — the video search below will cover it."}</div>
           <div style={{ marginTop: 8 }}>
             <a href={`https://www.youtube.com/results?search_query=${encodeURIComponent(name + " proper form technique")}`}
-               target="_blank" rel="noreferrer">Watch demo videos \u2192</a>
+               target="_blank" rel="noreferrer">Watch demo videos →</a>
           </div>
         </div>
       )}
@@ -807,11 +807,11 @@ function Exercise({ item, logged, onChange, est1rm, pick, onPick, onRemove }) {
         <div className="tl-plates">
           <span className="tl-plate">{target} lb</span>
           <span className="tl-meta" style={{ fontSize: 10.5 }}>
-            {Math.round(item.pct * 100)}% \u00b7 per side:
+            {Math.round(item.pct * 100)}% · per side:
           </span>
           {pm && pm.plates.length
             ? pm.plates.map((p, i) => (
-                <span key={i} className="tl-plate" data-small="1">{p.c}\u00d7{p.s}</span>
+                <span key={i} className="tl-plate" data-small="1">{p.c}×{p.s}</span>
               ))
             : <span className="tl-plate" data-small="1">bar only</span>}
         </div>
@@ -828,7 +828,7 @@ function Exercise({ item, logged, onChange, est1rm, pick, onPick, onRemove }) {
           <button className="tl-btn" data-primary={r.done ? "1" : undefined}
             style={{ padding: "10px 0", fontSize: 14 }}
             onClick={() => setRow(i, { done: !r.done })}
-            aria-label={`Mark set ${i + 1} ${r.done ? "not done" : "done"}`}>\u2713</button>
+            aria-label={`Mark set ${i + 1} ${r.done ? "not done" : "done"}`}>✓</button>
         </div>
       ))}
 
@@ -862,7 +862,7 @@ function AddOwn({ onAdd }) {
   return (
     <div className="tl-card">
       <h3>Add anything else you did</h3>
-      <div className="tl-meta">Elliptical warm-up, stretching, a machine you like \u2014 it all lands in your log and your exports.</div>
+      <div className="tl-meta">Elliptical warm-up, stretching, a machine you like — it all lands in your log and your exports.</div>
       <input className="tl-in" style={{ fontFamily: "inherit", marginTop: 10 }} value={name}
         onChange={(e) => setName(e.target.value)} placeholder="e.g. Elliptical warm-up" aria-label="Exercise name" />
       <div className="tl-row" style={{ marginTop: 8 }}>
@@ -1149,7 +1149,7 @@ function Export({ data, program, persist, toast }) {
       <div className="tl-card">
         <div className="tl-note" style={{ marginTop: 0 }}>
           CSV files open in Excel, Numbers or Google Sheets. Every set, every meal, every morning weigh-in.
-          Your log lives in this browser only \u2014 pull a backup now and then, and definitely before you
+          Your log lives in this browser only — pull a backup now and then, and definitely before you
           change phones.
         </div>
         <button className="tl-btn" data-primary="1" style={{ width: "100%", marginTop: 10 }}
